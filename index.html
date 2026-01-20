@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PXL Clock | Time, Reimagined in Pixels</title>
+    <meta name="description" content="A handcrafted 24x24 LED pixel clock. Limited to 100 pieces. Design object meets creative playground.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Pixel Grid Background -->
+    <canvas id="pixel-bg"></canvas>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#" class="nav-logo">
+            <span class="logo-text">PXL</span>
+            <span class="logo-dot"></span>
+        </a>
+        <div class="nav-links">
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#specs" class="nav-link">Specs</a>
+            <a href="#order" class="nav-btn">Pre-Order</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Limited Edition — Only 100 Units
+            </div>
+            <h1 class="hero-title" data-splitting>
+                <span class="title-line">Time,</span>
+                <span class="title-line">Reimagined</span>
+                <span class="title-line accent">in Pixels</span>
+            </h1>
+            <p class="hero-subtitle">
+                A handcrafted design object with 576 RGB LEDs.
+                More than a clock — a canvas for your creativity.
+            </p>
+            <div class="hero-cta">
+                <a href="#order" class="btn btn-primary">
+                    <span>Pre-Order Now</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#features" class="btn btn-secondary">
+                    <span>Discover More</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-image-wrapper">
+                <img src="images/hero-clock.jpg" alt="PXL Clock displaying colorful pixel time" class="hero-img">
+                <div class="hero-image-glow"></div>
+            </div>
+            <div class="floating-pixels">
+                <div class="pixel pixel-1"></div>
+                <div class="pixel pixel-2"></div>
+                <div class="pixel pixel-3"></div>
+                <div class="pixel pixel-4"></div>
+                <div class="pixel pixel-5"></div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <span>576 RGB LEDs</span>
+            <span class="marquee-dot"></span>
+            <span>24 x 24 Pixels</span>
+            <span class="marquee-dot"></span>
+            <span>Handcrafted Glass</span>
+            <span class="marquee-dot"></span>
+            <span>Over-the-Air Updates</span>
+            <span class="marquee-dot"></span>
+            <span>Fully Programmable</span>
+            <span class="marquee-dot"></span>
+            <span>Made in Germany</span>
+            <span class="marquee-dot"></span>
+            <span>576 RGB LEDs</span>
+            <span class="marquee-dot"></span>
+            <span>24 x 24 Pixels</span>
+            <span class="marquee-dot"></span>
+            <span>Handcrafted Glass</span>
+            <span class="marquee-dot"></span>
+            <span>Over-the-Air Updates</span>
+            <span class="marquee-dot"></span>
+            <span>Fully Programmable</span>
+            <span class="marquee-dot"></span>
+            <span>Made in Germany</span>
+            <span class="marquee-dot"></span>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-header">
+            <span class="section-tag">Why PXL Clock</span>
+            <h2 class="section-title">
+                Not just a clock.<br>
+                <span class="gradient-text">A creative playground.</span>
+            </h2>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card" data-feature="1">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="3" y="3" width="18" height="18" rx="2"/>
+                        <rect x="7" y="7" width="3" height="3"/>
+                        <rect x="14" y="7" width="3" height="3"/>
+                        <rect x="7" y="14" width="3" height="3"/>
+                        <rect x="14" y="14" width="3" height="3"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">576 RGB Pixels</h3>
+                <p class="feature-desc">A vibrant 24x24 grid of individually controllable LEDs. Each pixel tells part of your story.</p>
+            </div>
+
+            <div class="feature-card" data-feature="2">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Handcrafted Glass</h3>
+                <p class="feature-desc">Each frame is precision-crafted from real glass. Unique character in every single unit.</p>
+            </div>
+
+            <div class="feature-card" data-feature="3">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Fully Programmable</h3>
+                <p class="feature-desc">Create your own clock faces, animations, and pixel art with C# or F#. Your imagination, your display.</p>
+            </div>
+
+            <div class="feature-card" data-feature="4">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c1.66 0 3-4.03 3-9s-1.34-9-3-9m0 18c-1.66 0-3-4.03-3-9s1.34-9 3-9m-9 9a9 9 0 0 1 9-9"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">OTA Updates</h3>
+                <p class="feature-desc">Your clock stays fresh with over-the-air updates. New features delivered seamlessly.</p>
+            </div>
+        </div>
+
+        <!-- Feature Showcase -->
+        <div class="feature-showcase">
+            <div class="showcase-image">
+                <img src="images/clock-rainbow.jpg" alt="PXL Clock with rainbow display" class="showcase-img">
+            </div>
+            <div class="showcase-content">
+                <span class="showcase-tag">Design Philosophy</span>
+                <h3 class="showcase-title">Where Art Meets Technology</h3>
+                <p class="showcase-text">
+                    Every PXL Clock is a statement piece. The deliberate simplicity of the frame
+                    — available in black or white — lets the vibrant pixel display take center stage.
+                    It's not just about telling time; it's about making a statement.
+                </p>
+                <ul class="showcase-list">
+                    <li>
+                        <span class="list-icon"></span>
+                        Premium build quality
+                    </li>
+                    <li>
+                        <span class="list-icon"></span>
+                        Minimalist design language
+                    </li>
+                    <li>
+                        <span class="list-icon"></span>
+                        Perfect desktop companion
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Image Section -->
+    <section class="parallax-section">
+        <div class="parallax-image" data-speed="0.5">
+            <img src="images/clocks-trio.jpg" alt="Three PXL Clocks showing different displays">
+        </div>
+        <div class="parallax-overlay"></div>
+        <div class="parallax-content">
+            <h2 class="parallax-title">Choose Your Style</h2>
+            <p class="parallax-subtitle">Available in Black & White</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="section-header">
+            <span class="section-tag">Gallery</span>
+            <h2 class="section-title">
+                Infinite Possibilities.<br>
+                <span class="gradient-text">One Display.</span>
+            </h2>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item large" data-cursor="View">
+                <img src="images/clock-time.jpg" alt="PXL Clock showing time">
+                <div class="gallery-overlay">
+                    <span class="gallery-label">Clock Faces</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-cursor="View">
+                <img src="images/clock-emoji.jpg" alt="PXL Clock showing emoji">
+                <div class="gallery-overlay">
+                    <span class="gallery-label">Pixel Art</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-cursor="View">
+                <img src="images/clock-pacman.jpg" alt="PXL Clock showing Pacman ghost">
+                <div class="gallery-overlay">
+                    <span class="gallery-label">Retro Gaming</span>
+                </div>
+            </div>
+            <div class="gallery-item wide" data-cursor="View">
+                <img src="images/clock-lifestyle.jpg" alt="PXL Clock in home setting">
+                <div class="gallery-overlay">
+                    <span class="gallery-label">In Your Space</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Section -->
+    <section class="code-section">
+        <div class="code-content">
+            <span class="section-tag">For Developers</span>
+            <h2 class="section-title">
+                Your Code.<br>
+                <span class="gradient-text">Your Pixels.</span>
+            </h2>
+            <p class="code-desc">
+                Build custom applications using C# or F#. The PXL SDK provides everything
+                you need to create stunning visualizations, games, and more.
+            </p>
+            <a href="https://github.com/CuminAndPotato/PXL-Clock" target="_blank" class="btn btn-primary">
+                <span>View on GitHub</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                </svg>
+            </a>
+        </div>
+        <div class="code-block">
+            <div class="code-header">
+                <span class="code-dot red"></span>
+                <span class="code-dot yellow"></span>
+                <span class="code-dot green"></span>
+                <span class="code-filename">MyClockFace.cs</span>
+            </div>
+            <pre class="code-content-pre"><code><span class="code-keyword">public class</span> <span class="code-class">MyClockFace</span> : <span class="code-class">PxlApp</span>
+{
+    <span class="code-keyword">public override void</span> <span class="code-function">Render</span>(<span class="code-class">PxlCanvas</span> canvas)
+    {
+        <span class="code-comment">// Get current time</span>
+        <span class="code-keyword">var</span> now = <span class="code-class">DateTime</span>.Now;
+
+        <span class="code-comment">// Draw colorful background</span>
+        canvas.<span class="code-function">DrawGradient</span>(
+            <span class="code-class">Color</span>.Cyan,
+            <span class="code-class">Color</span>.Magenta
+        );
+
+        <span class="code-comment">// Display time in pixels</span>
+        canvas.<span class="code-function">DrawText</span>(
+            now.<span class="code-function">ToString</span>(<span class="code-string">"HH:mm"</span>),
+            <span class="code-class">Color</span>.White
+        );
+    }
+}</code></pre>
+        </div>
+    </section>
+
+    <!-- Specs Section -->
+    <section class="specs" id="specs">
+        <div class="section-header">
+            <span class="section-tag">Technical Specs</span>
+            <h2 class="section-title">
+                Built to Last.<br>
+                <span class="gradient-text">Built to Impress.</span>
+            </h2>
+        </div>
+
+        <div class="specs-grid">
+            <div class="spec-item">
+                <span class="spec-value">24<span class="spec-unit">x</span>24</span>
+                <span class="spec-label">Pixel Resolution</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-value">576</span>
+                <span class="spec-label">RGB LEDs</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-value">16M<span class="spec-unit">+</span></span>
+                <span class="spec-label">Colors</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-value">WiFi</span>
+                <span class="spec-label">Connectivity</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-value">OTA</span>
+                <span class="spec-label">Updates</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-value">C#/F#</span>
+                <span class="spec-label">SDK Support</span>
+            </div>
+        </div>
+
+        <div class="specs-details">
+            <div class="spec-detail">
+                <h4>Display</h4>
+                <ul>
+                    <li>24x24 RGB LED Matrix</li>
+                    <li>576 individually addressable pixels</li>
+                    <li>16.7 million color depth</li>
+                    <li>Adjustable brightness</li>
+                </ul>
+            </div>
+            <div class="spec-detail">
+                <h4>Materials</h4>
+                <ul>
+                    <li>Handcrafted glass front</li>
+                    <li>Premium aluminum frame</li>
+                    <li>Available in Black or White</li>
+                    <li>Precision CNC machined</li>
+                </ul>
+            </div>
+            <div class="spec-detail">
+                <h4>Connectivity</h4>
+                <ul>
+                    <li>WiFi 802.11 b/g/n</li>
+                    <li>Companion mobile app</li>
+                    <li>Cloud synchronization</li>
+                    <li>Developer API access</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="order">
+        <div class="cta-bg">
+            <div class="cta-grid"></div>
+        </div>
+        <div class="cta-content">
+            <span class="cta-badge">Limited to 100 Units</span>
+            <h2 class="cta-title">
+                Ready to Own<br>
+                <span class="gradient-text">a Piece of Art?</span>
+            </h2>
+            <p class="cta-desc">
+                Join the exclusive first batch of PXL Clock owners.
+                Each unit is numbered and comes with a certificate of authenticity.
+            </p>
+            <div class="cta-price">
+                <span class="price-label">Starting at</span>
+                <span class="price-value">EUR 349</span>
+                <span class="price-note">Use code <strong>fsharp</strong> for EUR 50 off</span>
+            </div>
+            <a href="https://www.pxlclock.com" target="_blank" class="btn btn-large">
+                <span>Pre-Order Your PXL Clock</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+            <p class="cta-note">Free shipping within EU. Ships Q1 2025.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-text">PXL</span>
+                <span class="logo-dot"></span>
+                <p class="footer-tagline">Time, Reimagined in Pixels</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#specs">Specifications</a>
+                    <a href="#gallery">Gallery</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Developers</h4>
+                    <a href="https://github.com/CuminAndPotato/PXL-Clock" target="_blank">GitHub</a>
+                    <a href="https://docs.pxlclock.com" target="_blank">Documentation</a>
+                    <a href="https://docs.pxlclock.com/oss" target="_blank">Open Source</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="https://www.pxlclock.com" target="_blank">About Us</a>
+                    <a href="mailto:hello@pxlclock.com">Contact</a>
+                    <a href="#">Press Kit</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Cumin & Potato GmbH. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="#" aria-label="Twitter">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                        <rect x="2" y="2" width="20" height="20" rx="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="18" cy="6" r="1"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/CuminAndPotato/PXL-Clock" target="_blank" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
