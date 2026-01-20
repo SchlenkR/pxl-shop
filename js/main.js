@@ -247,11 +247,11 @@ function initGSAPAnimations() {
     const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
     heroTl
-        .from('.hero-badge', { opacity: 0, y: 30, duration: 0.8, delay: 0.3 })
-        .from('.title-line', { opacity: 0, y: 80, duration: 1, stagger: 0.15 }, '-=0.4')
+        .from('.hero-bg-img', { opacity: 0, scale: 1.1, duration: 1.5 })
+        .from('.hero-badge', { opacity: 0, y: 30, duration: 0.8 }, '-=1')
+        .from('.title-line', { opacity: 0, y: 80, duration: 1, stagger: 0.15 }, '-=0.6')
         .from('.hero-subtitle', { opacity: 0, y: 30, duration: 0.8 }, '-=0.5')
         .from('.hero-cta', { opacity: 0, y: 30, duration: 0.8 }, '-=0.4')
-        .from('.hero-image-wrapper', { opacity: 0, scale: 0.9, x: 100, duration: 1.2 }, '-=1')
         .from('.pixel', { opacity: 0, scale: 0, duration: 0.6, stagger: 0.1 }, '-=0.5')
         .from('.hero-scroll', { opacity: 0, y: 20, duration: 0.6 }, '-=0.3');
 
@@ -399,26 +399,7 @@ function initNavScroll() {
 // Interactive Tilt Effect on Hero Image
 // ========================================
 function initHeroTilt() {
-    const heroImageWrapper = document.querySelector('.hero-image-wrapper');
-    if (!heroImageWrapper || window.innerWidth <= 992) return;
-
-    const heroSection = document.querySelector('.hero');
-
-    heroSection.addEventListener('mousemove', (e) => {
-        const rect = heroSection.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-        const rotateX = (y - centerY) / 50;
-        const rotateY = (centerX - x) / 50;
-
-        heroImageWrapper.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-    });
-
-    heroSection.addEventListener('mouseleave', () => {
-        heroImageWrapper.style.transform = 'perspective(1000px) rotateX(5deg) rotateY(-5deg)';
-    });
+    // Removed - using fullscreen background now
 }
 
 // ========================================
