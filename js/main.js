@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initHeroTilt();
     initMagneticButtons();
     initLogoDot();
+    initImageCarousels();
 
     // Remove loading state
     document.body.classList.remove('is-loading');
@@ -615,6 +616,33 @@ function initLogoDot() {
         requestAnimationFrame(animate);
     }
     animate();
+}
+
+// ========================================
+// Image Carousels (Parallax & Phone)
+// ========================================
+function initImageCarousels() {
+    // Parallax section crossfade
+    const parallaxImages = document.querySelectorAll('.parallax-img');
+    if (parallaxImages.length > 1) {
+        let parallaxIndex = 0;
+        setInterval(() => {
+            parallaxImages[parallaxIndex].classList.remove('active');
+            parallaxIndex = (parallaxIndex + 1) % parallaxImages.length;
+            parallaxImages[parallaxIndex].classList.add('active');
+        }, 3000);
+    }
+
+    // Phone screenshots crossfade
+    const appScreenshots = document.querySelectorAll('.app-screenshot');
+    if (appScreenshots.length > 1) {
+        let screenshotIndex = 0;
+        setInterval(() => {
+            appScreenshots[screenshotIndex].classList.remove('active');
+            screenshotIndex = (screenshotIndex + 1) % appScreenshots.length;
+            appScreenshots[screenshotIndex].classList.add('active');
+        }, 3000);
+    }
 }
 
 console.log('%cPXL Clock', 'font-size: 24px; font-weight: bold; color: #00f0ff;');
