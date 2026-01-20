@@ -620,7 +620,7 @@ img {
 
 /* Parallax Section with Crossfade */
 .parallax-section {
-    height: 80vh;
+    height: 100vh;
     position: relative;
     overflow: hidden;
 }
@@ -931,12 +931,13 @@ img {
 
 /* Code Section */
 .code-section {
-    padding: 8rem 4rem;
+    padding: 12rem 4rem;
     display: grid;
     grid-template-columns: 1fr 1.2fr;
-    gap: 4rem;
+    gap: 6rem;
     align-items: center;
     background: var(--color-bg-alt);
+    min-height: 80vh;
 }
 
 .code-desc {
