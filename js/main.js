@@ -293,6 +293,24 @@ function initGSAPAnimations() {
         });
     });
 
+    // App section
+    gsap.from('.app-content', {
+        scrollTrigger: { trigger: '.app-section', start: 'top 70%' },
+        opacity: 0, x: -80, duration: 1,
+    });
+
+    gsap.from('.phone-mockup', {
+        scrollTrigger: { trigger: '.app-section', start: 'top 70%' },
+        opacity: 0, y: 100, rotation: 10, duration: 1.2,
+    });
+
+    gsap.utils.toArray('.app-feature').forEach((feature, i) => {
+        gsap.from(feature, {
+            scrollTrigger: { trigger: '.app-features', start: 'top 80%' },
+            opacity: 0, y: 40, duration: 0.6, delay: i * 0.1,
+        });
+    });
+
     gsap.from('.code-content', {
         scrollTrigger: { trigger: '.code-section', start: 'top 70%' },
         opacity: 0, x: -80, duration: 1,
@@ -332,6 +350,39 @@ function initGSAPAnimations() {
 // Parallax Effects
 // ========================================
 function initParallax() {
+    // Hero background parallax - moves slower than scroll
+    const heroBg = document.querySelector('.hero-bg-img');
+    if (heroBg) {
+        gsap.to(heroBg, {
+            yPercent: 20,
+            scale: 1.1,
+            ease: 'none',
+            scrollTrigger: {
+                trigger: '.hero',
+                start: 'top top',
+                end: 'bottom top',
+                scrub: true,
+            },
+        });
+    }
+
+    // Hero content parallax - moves faster than background
+    const heroContent = document.querySelector('.hero-content');
+    if (heroContent) {
+        gsap.to(heroContent, {
+            yPercent: -30,
+            opacity: 0,
+            ease: 'none',
+            scrollTrigger: {
+                trigger: '.hero',
+                start: 'top top',
+                end: '80% top',
+                scrub: true,
+            },
+        });
+    }
+
+    // Parallax section background
     const parallaxImage = document.querySelector('.parallax-image');
     if (parallaxImage) {
         gsap.to(parallaxImage, {
@@ -348,22 +399,26 @@ function initParallax() {
 
     const parallaxContent = document.querySelector('.parallax-content');
     if (parallaxContent) {
-        gsap.from(parallaxContent, {
-            yPercent: 50,
-            opacity: 0,
-            ease: 'none',
-            scrollTrigger: {
-                trigger: '.parallax-section',
-                start: 'top center',
-                end: 'center center',
-                scrub: true,
-            },
-        });
+        gsap.fromTo(parallaxContent,
+            { yPercent: 30, opacity: 0 },
+            {
+                yPercent: -20,
+                opacity: 1,
+                ease: 'none',
+                scrollTrigger: {
+                    trigger: '.parallax-section',
+                    start: 'top bottom',
+                    end: 'bottom top',
+                    scrub: true,
+                },
+            }
+        );
     }
 
+    // Floating pixels parallax
     gsap.utils.toArray('.pixel').forEach((pixel, i) => {
         gsap.to(pixel, {
-            yPercent: 50 + (i * 20),
+            yPercent: 100 + (i * 30),
             ease: 'none',
             scrollTrigger: {
                 trigger: '.hero',
@@ -373,6 +428,126 @@ function initParallax() {
             },
         });
     });
+
+    // Section titles parallax - subtle upward movement
+    gsap.utils.toArray('.section-title').forEach(title => {
+        gsap.fromTo(title,
+            { yPercent: 20 },
+            {
+                yPercent: -10,
+                ease: 'none',
+                scrollTrigger: {
+                    trigger: title,
+                    start: 'top bottom',
+                    end: 'bottom top',
+                    scrub: true,
+                },
+            }
+        );
+    });
+
+    // Feature cards stagger parallax
+    gsap.utils.toArray('.feature-card').forEach((card, i) => {
+        gsap.fromTo(card,
+            { yPercent: 15 + (i % 2) * 10 },
+            {
+                yPercent: -10 - (i % 2) * 5,
+                ease: 'none',
+                scrollTrigger: {
+                    trigger: card,
+                    start: 'top bottom',
+                    end: 'bottom top',
+                    scrub: true,
+                },
+            }
+        );
+    });
+
+    // Gallery items parallax
+    gsap.utils.toArray('.gallery-item').forEach((item, i) => {
+        gsap.fromTo(item,
+            { yPercent: 10 + (i % 3) * 5 },
+            {
+                yPercent: -5 - (i % 3) * 3,
+                ease: 'none',
+                scrollTrigger: {
+                    trigger: item,
+                    start: 'top bottom',
+                    end: 'bottom top',
+                    scrub: true,
+                },
+            }
+        );
+    });
+
+    // Phone mockup parallax
+    const phoneMockup = document.querySelector('.phone-mockup');
+    if (phoneMockup) {
+        gsap.fromTo(phoneMockup,
+            { yPercent: 20, rotation: 5 },
+            {
+                yPercent: -15,
+                rotation: -3,
+                ease: 'none',
+                scrollTrigger: {
+                    trigger: '.app-section',
+                    start: 'top bottom',
+                    end: 'bottom top',
+                    scrub: true,
+                },
+            }
+        );
+    }
+
+    // Code block parallax
+    const codeBlock = document.querySelector('.code-block');
+    if (codeBlock) {
+        gsap.fromTo(codeBlock,
+            { yPercent: 15 },
+            {
+                yPercent: -10,
+                ease: 'none',
+                scrollTrigger: {
+                    trigger: '.code-section',
+                    start: 'top bottom',
+                    end: 'bottom top',
+                    scrub: true,
+                },
+            }
+        );
+    }
+
+    // Specs grid items parallax
+    gsap.utils.toArray('.spec-item').forEach((item, i) => {
+        gsap.fromTo(item,
+            { yPercent: 20 + (i % 3) * 5 },
+            {
+                yPercent: -10,
+                ease: 'none',
+                scrollTrigger: {
+                    trigger: '.specs-grid',
+                    start: 'top bottom',
+                    end: 'bottom top',
+                    scrub: true,
+                },
+            }
+        );
+    });
+
+    // CTA section background grid parallax
+    const ctaGrid = document.querySelector('.cta-grid');
+    if (ctaGrid) {
+        gsap.to(ctaGrid, {
+            backgroundPosition: '60px 60px',
+            ease: 'none',
+            scrollTrigger: {
+                trigger: '.cta',
+                start: 'top bottom',
+                end: 'bottom top',
+                scrub: true,
+            },
+        });
+    }
 }
 
 // ========================================
