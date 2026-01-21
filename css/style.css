@@ -940,11 +940,16 @@ img {
     min-height: 80vh;
 }
 
+.code-section .section-title {
+    margin-bottom: 2.5rem;
+}
+
 .code-desc {
     font-size: 1.1rem;
     color: var(--color-text-muted);
     line-height: 1.8;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
     max-width: 480px;
 }
 
