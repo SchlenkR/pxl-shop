@@ -21,9 +21,18 @@
   "license": "ISC",
   "devDependencies": {
     "@modyfi/vite-plugin-yaml": "^1.1.1",
-    "vite": "^7.3.1"
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^7.3.1",
+    "vite-plugin-wasm": "^3.4.1",
+    "vite-plugin-top-level-await": "^1.5.0"
   },
   "dependencies": {
-    "gsap": "^3.14.2"
+    "@pxl/api": "file:../pxl-api/node/api",
+    "canvaskit-wasm": "^0.40.0",
+    "pxl-device-view": "file:../pxl-software/src/pxl-device-view",
+    "pxl-receiver-canvas": "file:../pxl-software/src/pxl-receiver-canvas",
+    "gsap": "^3.14.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
