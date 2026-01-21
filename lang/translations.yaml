@@ -46,6 +46,13 @@ nav:
     es: "App"
     it: "App"
     pl: "Aplikacja"
+  appdev:
+    en: "Developer"
+    de: "Entwickler"
+    fr: "Développeur"
+    es: "Desarrollador"
+    it: "Sviluppatore"
+    pl: "Programista"
   specs:
     en: "Specs"
     de: "Specs"

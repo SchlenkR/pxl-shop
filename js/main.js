@@ -527,7 +527,7 @@ function initParallax() {
     const heroContent = document.querySelector('.hero-content');
     if (heroContent) {
         gsap.to(heroContent, {
-            yPercent: -30,
+            yPercent: -15, // Reduced from -30 to avoid excessive separation
             opacity: 0,
             ease: 'none',
             scrollTrigger: {
@@ -587,6 +587,8 @@ function initParallax() {
     });
 
     // Section titles parallax - subtle upward movement
+    // DISABLED: Causing compression/squashing issues
+    /*
     gsap.utils.toArray('.section-title').forEach(title => {
         gsap.fromTo(title,
             { yPercent: 20 },
@@ -602,8 +604,11 @@ function initParallax() {
             }
         );
     });
+    */
 
     // Feature cards parallax (aligned, no stagger)
+    // DISABLED: Causing compression/squashing issues
+    /*
     gsap.utils.toArray('.feature-card').forEach((card) => {
         gsap.fromTo(card,
             { yPercent: 10 },
@@ -619,8 +624,11 @@ function initParallax() {
             }
         );
     });
+    */
 
     // Gallery items parallax
+    // DISABLED: Causing compression/squashing issues
+    /*
     gsap.utils.toArray('.gallery-item').forEach((item, i) => {
         gsap.fromTo(item,
             { yPercent: 10 + (i % 3) * 5 },
@@ -636,6 +644,7 @@ function initParallax() {
             }
         );
     });
+    */
 
     // Phone mockup parallax
     const phoneMockup = document.querySelector('.phone-mockup');
