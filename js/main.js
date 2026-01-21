@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initI18n();
     initAnchorLinks();
     initCursor();
-    initPixelBackground();
+    // initPixelBackground();
     initGSAPAnimations();
     initParallax();
     initNavScroll();
@@ -759,14 +759,18 @@ function initMagneticButtons() {
 // ========================================
 function initLogoDot() {
     const logoDots = document.querySelectorAll('.logo-dot');
-    let hue = 180;
+    let pulse = 0;
 
     function animate() {
-        hue = (hue + 0.5) % 360;
-        const color = `hsl(${hue}, 100%, 60%)`;
+        pulse += 0.05;
+        // Subtle pulse of the accent color (Cyan)
+        // HSL around 190 (Cyan), Saturation 90%, Lightness oscillates
+        const lightness = 50 + Math.sin(pulse) * 10;
+        const color = `hsl(190, 90%, ${lightness}%)`;
 
         logoDots.forEach(dot => {
-            dot.style.background = `linear-gradient(135deg, ${color} 0%, hsl(${(hue + 60) % 360}, 100%, 50%) 100%)`;
+            dot.style.background = color;
+            dot.style.boxShadow = `0 0 10px ${color}`;
         });
 
         requestAnimationFrame(animate);
