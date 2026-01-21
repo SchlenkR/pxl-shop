@@ -1,19 +1,175 @@
 /**
  * PXL Clock - Modern Landing Page
- * GSAP Animations, Custom Cursor, Pixel Background
+ * GSAP Animations, Custom Cursor, Pixel Background, i18n
  */
 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import '../css/style.css';
+import translations from '../lang/translations.yaml';
 
 // Register GSAP plugins
 gsap.registerPlugin(ScrollTrigger);
 
 // ========================================
+// Internationalization (i18n)
+// ========================================
+const SUPPORTED_LANGS = ['en', 'de', 'fr', 'es', 'it', 'pl'];
+const DEFAULT_LANG = 'en';
+let currentLang = DEFAULT_LANG;
+
+function getNestedValue(obj, path) {
+    return path.split('.').reduce((current, key) => current?.[key], obj);
+}
+
+function t(key) {
+    const translation = getNestedValue(translations, key);
+    if (translation && translation[currentLang]) {
+        return translation[currentLang];
+    }
+    // Fallback to English
+    if (translation && translation[DEFAULT_LANG]) {
+        return translation[DEFAULT_LANG];
+    }
+    console.warn(`Translation missing for key: ${key}`);
+    return key;
+}
+
+function applyTranslations() {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const translation = t(key);
+
+        // Handle HTML content (for elements with data-i18n-html="true")
+        if (el.hasAttribute('data-i18n-html')) {
+            el.innerHTML = translation;
+        } else {
+            el.textContent = translation;
+        }
+    });
+
+    // Update meta description
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+        metaDesc.setAttribute('content', t('meta.description'));
+    }
+
+    // Update document title
+    document.title = t('meta.title');
+
+    // Update html lang attribute
+    document.documentElement.lang = currentLang;
+}
+
+function setLanguage(lang) {
+    if (!SUPPORTED_LANGS.includes(lang)) {
+        lang = DEFAULT_LANG;
+    }
+    currentLang = lang;
+    localStorage.setItem('pxl-lang', lang);
+    applyTranslations();
+    updateLangSwitcher();
+}
+
+function updateLangSwitcher() {
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === currentLang);
+    });
+}
+
+function setupBrowserLanguageButton() {
+    const browserLang = navigator.language?.split('-')[0];
+    const browserBtn = document.querySelector('.lang-btn-browser');
+
+    if (!browserBtn) return;
+
+    // If browser language is EN or not supported, hide the browser button
+    if (!browserLang || browserLang === 'en' || !SUPPORTED_LANGS.includes(browserLang)) {
+        browserBtn.style.display = 'none';
+        return;
+    }
+
+    // Show browser language button with correct language
+    browserBtn.dataset.lang = browserLang;
+    browserBtn.textContent = browserLang.toUpperCase();
+    browserBtn.style.display = '';
+
+    // Hide this language from dropdown menu
+    const dropdownMenu = document.querySelector('.lang-dropdown-menu');
+    if (dropdownMenu) {
+        const dropdownBtns = dropdownMenu.querySelectorAll('.lang-btn');
+        dropdownBtns.forEach(btn => {
+            if (btn.dataset.lang === browserLang) {
+                btn.style.display = 'none';
+            }
+        });
+    }
+}
+
+function initDropdown() {
+    const dropdown = document.querySelector('.lang-dropdown');
+    const toggle = document.querySelector('.lang-dropdown-toggle');
+
+    if (!dropdown || !toggle) return;
+
+    // Toggle dropdown on click
+    toggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dropdown.classList.toggle('open');
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!dropdown.contains(e.target)) {
+            dropdown.classList.remove('open');
+        }
+    });
+
+    // Close dropdown when selecting a language
+    const dropdownMenu = document.querySelector('.lang-dropdown-menu');
+    if (dropdownMenu) {
+        dropdownMenu.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                dropdown.classList.remove('open');
+            });
+        });
+    }
+}
+
+function initI18n() {
+    // Detect browser language
+    const browserLang = navigator.language?.split('-')[0];
+    const storedLang = localStorage.getItem('pxl-lang');
+
+    if (storedLang && SUPPORTED_LANGS.includes(storedLang)) {
+        currentLang = storedLang;
+    } else if (browserLang && SUPPORTED_LANGS.includes(browserLang)) {
+        currentLang = browserLang;
+    }
+
+    // Setup browser language button (show EN + browser lang)
+    setupBrowserLanguageButton();
+
+    // Setup dropdown behavior
+    initDropdown();
+
+    // Apply initial translations
+    applyTranslations();
+    updateLangSwitcher();
+
+    // Setup language switcher click handlers
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            setLanguage(btn.dataset.lang);
+        });
+    });
+}
+
+// ========================================
 // Initialize on DOM Load
 // ========================================
 document.addEventListener('DOMContentLoaded', () => {
+    initI18n();
     initAnchorLinks();
     initCursor();
     initPixelBackground();
@@ -447,12 +603,12 @@ function initParallax() {
         );
     });
 
-    // Feature cards stagger parallax
-    gsap.utils.toArray('.feature-card').forEach((card, i) => {
+    // Feature cards parallax (aligned, no stagger)
+    gsap.utils.toArray('.feature-card').forEach((card) => {
         gsap.fromTo(card,
-            { yPercent: 15 + (i % 2) * 10 },
+            { yPercent: 10 },
             {
-                yPercent: -10 - (i % 2) * 5,
+                yPercent: -5,
                 ease: 'none',
                 scrollTrigger: {
                     trigger: card,

@@ -1,0 +1,973 @@
+# PXL Clock Landing Page Translations
+# Languages: en, de, fr, es, it, pl
+# Structure: key -> { lang: translation }
+
+# ===========================================
+# META
+# ===========================================
+meta:
+  title:
+    en: "PXL Clock | Time. Design. Expression."
+    de: "PXL Clock | Zeit. Design. Ausdruck."
+    fr: "PXL Clock | Le temps. Design. Expression."
+    es: "PXL Clock | Tiempo. Diseño. Expresión."
+    it: "PXL Clock | Tempo. Design. Espressione."
+    pl: "PXL Clock | Czas. Design. Ekspresja."
+  description:
+    en: "A handcrafted 24x24 LED pixel clock. Limited to 100 pieces. Design object meets creative playground."
+    de: "Eine handgefertigte 24x24 LED-Pixeluhr. Limitiert auf 100 Stück. Designobjekt trifft kreativen Spielplatz."
+    fr: "Une horloge à pixels LED 24x24 artisanale. Limitée à 100 pièces. Objet design et terrain de jeu créatif."
+    es: "Un reloj de píxeles LED 24x24 artesanal. Limitado a 100 unidades. Objeto de diseño y patio de juegos creativo."
+    it: "Un orologio a pixel LED 24x24 artigianale. Limitato a 100 pezzi. Oggetto di design e parco giochi creativo."
+    pl: "Ręcznie wykonany zegar pikselowy LED 24x24. Limitowany do 100 sztuk. Obiekt designerski i kreatywny plac zabaw."
+
+# ===========================================
+# NAVIGATION
+# ===========================================
+nav:
+  features:
+    en: "Features"
+    de: "Funktionen"
+    fr: "Fonctionnalités"
+    es: "Características"
+    it: "Caratteristiche"
+    pl: "Funkcje"
+  design:
+    en: "Design"
+    de: "Design"
+    fr: "Design"
+    es: "Diseño"
+    it: "Design"
+    pl: "Design"
+  app:
+    en: "App"
+    de: "App"
+    fr: "Appli"
+    es: "App"
+    it: "App"
+    pl: "Aplikacja"
+  specs:
+    en: "Specs"
+    de: "Specs"
+    fr: "Specs"
+    es: "Especificaciones"
+    it: "Specifiche"
+    pl: "Specyfikacja"
+  preorder:
+    en: "Pre-Order"
+    de: "Vorbestellen"
+    fr: "Précommander"
+    es: "Pre-pedido"
+    it: "Pre-ordine"
+    pl: "Zamów"
+
+# ===========================================
+# HERO
+# ===========================================
+hero:
+  badge:
+    en: "Limited Edition — Only 100 Units"
+    de: "Limitierte Auflage — Nur 100 Stück"
+    fr: "Édition Limitée — Seulement 100 Unités"
+    es: "Edición Limitada — Solo 100 Unidades"
+    it: "Edizione Limitata — Solo 100 Unità"
+    pl: "Edycja Limitowana — Tylko 100 Sztuk"
+  title_line1:
+    en: "Time."
+    de: "Zeit."
+    fr: "Le temps."
+    es: "Tiempo."
+    it: "Tempo."
+    pl: "Czas."
+  title_line2:
+    en: "Design."
+    de: "Design."
+    fr: "Design."
+    es: "Diseño."
+    it: "Design."
+    pl: "Design."
+  title_line3:
+    en: "Expression."
+    de: "Ausdruck."
+    fr: "Expression."
+    es: "Expresión."
+    it: "Espressione."
+    pl: "Ekspresja."
+  subtitle:
+    en: "Designed for spaces that want to tell more. For a community that codes in color."
+    de: "Entworfen für Räume, die mehr erzählen wollen. Für eine Community, die in Farbe programmiert."
+    fr: "Conçu pour des espaces qui veulent en dire plus. Pour une communauté qui code en couleur."
+    es: "Diseñado para espacios que quieren contar más. Para una comunidad que programa en color."
+    it: "Progettato per spazi che vogliono raccontare di più. Per una comunità che programma a colori."
+    pl: "Zaprojektowany dla przestrzeni, które chcą mówić więcej. Dla społeczności, która programuje w kolorze."
+  cta_primary:
+    en: "Pre-Order Now"
+    de: "Jetzt vorbestellen"
+    fr: "Précommander"
+    es: "Pre-ordenar ahora"
+    it: "Pre-ordina ora"
+    pl: "Zamów teraz"
+  cta_secondary:
+    en: "Discover More"
+    de: "Mehr erfahren"
+    fr: "En savoir plus"
+    es: "Descubrir más"
+    it: "Scopri di più"
+    pl: "Dowiedz się więcej"
+  scroll:
+    en: "Scroll to explore"
+    de: "Scrollen zum Entdecken"
+    fr: "Défiler pour explorer"
+    es: "Desplázate para explorar"
+    it: "Scorri per esplorare"
+    pl: "Przewiń, aby odkryć"
+
+# ===========================================
+# MARQUEE
+# ===========================================
+marquee:
+  leds:
+    en: "576 RGB LEDs"
+    de: "576 RGB-LEDs"
+    fr: "576 LEDs RGB"
+    es: "576 LEDs RGB"
+    it: "576 LED RGB"
+    pl: "576 diod RGB LED"
+  pixels:
+    en: "24 x 24 Pixels"
+    de: "24 x 24 Pixel"
+    fr: "24 x 24 Pixels"
+    es: "24 x 24 Píxeles"
+    it: "24 x 24 Pixel"
+    pl: "24 x 24 piksele"
+  glass:
+    en: "Handcrafted Glass"
+    de: "Handgefertigtes Glas"
+    fr: "Verre artisanal"
+    es: "Vidrio artesanal"
+    it: "Vetro artigianale"
+    pl: "Ręcznie wykonane szkło"
+  ota:
+    en: "Over-the-Air Updates"
+    de: "Over-the-Air Updates"
+    fr: "Mises à jour OTA"
+    es: "Actualizaciones OTA"
+    it: "Aggiornamenti OTA"
+    pl: "Aktualizacje bezprzewodowe"
+  programmable:
+    en: "Fully Programmable"
+    de: "Vollständig programmierbar"
+    fr: "Entièrement programmable"
+    es: "Totalmente programable"
+    it: "Completamente programmabile"
+    pl: "W pełni programowalny"
+  made_in:
+    en: "Made in Germany"
+    de: "Made in Germany"
+    fr: "Fabriqué en Allemagne"
+    es: "Hecho en Alemania"
+    it: "Made in Germany"
+    pl: "Made in Germany"
+
+# ===========================================
+# FEATURES
+# ===========================================
+features:
+  tag:
+    en: "Why PXL Clock"
+    de: "Warum PXL Clock"
+    fr: "Pourquoi PXL Clock"
+    es: "Por qué PXL Clock"
+    it: "Perché PXL Clock"
+    pl: "Dlaczego PXL Clock"
+  title_line1:
+    en: "Not just a clock."
+    de: "Nicht nur eine Uhr."
+    fr: "Plus qu'une horloge."
+    es: "No solo un reloj."
+    it: "Non solo un orologio."
+    pl: "Nie tylko zegar."
+  title_line2:
+    en: "A creative playground."
+    de: "Ein kreativer Spielplatz."
+    fr: "Un terrain de jeu créatif."
+    es: "Un patio de juegos creativo."
+    it: "Un parco giochi creativo."
+    pl: "Kreatywny plac zabaw."
+  card1_title:
+    en: "576 RGB Pixels"
+    de: "576 RGB-Pixel"
+    fr: "576 pixels RGB"
+    es: "576 píxeles RGB"
+    it: "576 pixel RGB"
+    pl: "576 pikseli RGB"
+  card1_desc:
+    en: "A vibrant 24x24 grid of individually controllable LEDs. Each pixel tells part of your story."
+    de: "Ein lebendiges 24x24-Raster aus einzeln steuerbaren LEDs. Jeder Pixel erzählt einen Teil Ihrer Geschichte."
+    fr: "Une grille vibrante 24x24 de LEDs contrôlables individuellement. Chaque pixel raconte une partie de votre histoire."
+    es: "Una vibrante cuadrícula 24x24 de LEDs controlables individualmente. Cada píxel cuenta parte de tu historia."
+    it: "Una vibrante griglia 24x24 di LED controllabili singolarmente. Ogni pixel racconta parte della tua storia."
+    pl: "Żywa siatka 24x24 indywidualnie sterowanych diod LED. Każdy piksel opowiada część Twojej historii."
+  card2_title:
+    en: "Handcrafted Glass"
+    de: "Handgefertigtes Glas"
+    fr: "Verre artisanal"
+    es: "Vidrio artesanal"
+    it: "Vetro artigianale"
+    pl: "Ręcznie wykonane szkło"
+  card2_desc:
+    en: "Each frame is precision-crafted from real glass. Unique character in every single unit."
+    de: "Jeder Rahmen ist präzise aus echtem Glas gefertigt. Einzigartiger Charakter in jedem einzelnen Stück."
+    fr: "Chaque cadre est fabriqué avec précision en verre véritable. Un caractère unique dans chaque unité."
+    es: "Cada marco está fabricado con precisión en vidrio real. Carácter único en cada unidad."
+    it: "Ogni cornice è realizzata con precisione in vero vetro. Carattere unico in ogni singola unità."
+    pl: "Każda rama jest precyzyjnie wykonana z prawdziwego szkła. Unikalny charakter w każdej sztuce."
+  card3_title:
+    en: "Fully Programmable"
+    de: "Vollständig programmierbar"
+    fr: "Entièrement programmable"
+    es: "Totalmente programable"
+    it: "Completamente programmabile"
+    pl: "W pełni programowalny"
+  card3_desc:
+    en: "Create your own clock faces, animations, and pixel art with C# or F#. Your imagination, your display."
+    de: "Erstellen Sie eigene Zifferblätter, Animationen und Pixel-Art mit C# oder F#. Ihre Fantasie, Ihr Display."
+    fr: "Créez vos propres cadrans, animations et pixel art avec C# ou F#. Votre imagination, votre affichage."
+    es: "Crea tus propias carátulas, animaciones y pixel art con C# o F#. Tu imaginación, tu pantalla."
+    it: "Crea i tuoi quadranti, animazioni e pixel art con C# o F#. La tua immaginazione, il tuo display."
+    pl: "Twórz własne tarcze zegara, animacje i pixel art w C# lub F#. Twoja wyobraźnia, Twój wyświetlacz."
+  card4_title:
+    en: "OTA Updates"
+    de: "OTA Updates"
+    fr: "Mises à jour OTA"
+    es: "Actualizaciones OTA"
+    it: "Aggiornamenti OTA"
+    pl: "Aktualizacje OTA"
+  card4_desc:
+    en: "Your clock stays fresh with over-the-air updates. New features delivered seamlessly."
+    de: "Ihre Uhr bleibt aktuell mit Over-the-Air-Updates. Neue Funktionen werden nahtlos geliefert."
+    fr: "Votre horloge reste à jour avec les mises à jour OTA. Nouvelles fonctionnalités livrées sans effort."
+    es: "Tu reloj se mantiene actualizado con actualizaciones OTA. Nuevas funciones entregadas sin problemas."
+    it: "Il tuo orologio rimane aggiornato con gli aggiornamenti OTA. Nuove funzionalità consegnate senza problemi."
+    pl: "Twój zegar pozostaje aktualny dzięki aktualizacjom bezprzewodowym. Nowe funkcje dostarczane bezproblemowo."
+  showcase_tag:
+    en: "Design Philosophy"
+    de: "Design-Philosophie"
+    fr: "Philosophie de design"
+    es: "Filosofía de diseño"
+    it: "Filosofia del design"
+    pl: "Filozofia designu"
+  showcase_title:
+    en: "Where Art Meets Technology"
+    de: "Wo Kunst auf Technologie trifft"
+    fr: "Où l'art rencontre la technologie"
+    es: "Donde el arte se encuentra con la tecnología"
+    it: "Dove l'arte incontra la tecnologia"
+    pl: "Gdzie sztuka spotyka technologię"
+  showcase_text:
+    en: "Every PXL Clock is a statement piece. The deliberate simplicity of the frame — available in black or white — lets the vibrant pixel display take center stage. It's not just about telling time; it's about making a statement."
+    de: "Jede PXL Clock ist ein Statement-Stück. Die bewusste Schlichtheit des Rahmens — erhältlich in Schwarz oder Weiß — lässt das lebendige Pixel-Display im Mittelpunkt stehen. Es geht nicht nur darum, die Zeit anzuzeigen; es geht darum, ein Statement zu setzen."
+    fr: "Chaque PXL Clock est une pièce de caractère. La simplicité délibérée du cadre — disponible en noir ou blanc — laisse l'écran pixel vibrant occuper le devant de la scène. Il ne s'agit pas seulement de donner l'heure; il s'agit de faire une déclaration."
+    es: "Cada PXL Clock es una pieza de declaración. La simplicidad deliberada del marco — disponible en negro o blanco — deja que la vibrante pantalla de píxeles sea el centro de atención. No se trata solo de dar la hora; se trata de hacer una declaración."
+    it: "Ogni PXL Clock è un pezzo di carattere. La semplicità deliberata della cornice — disponibile in nero o bianco — lascia che il vibrante display a pixel sia al centro dell'attenzione. Non si tratta solo di dare l'ora; si tratta di fare una dichiarazione."
+    pl: "Każdy PXL Clock to element dekoracyjny. Celowa prostota ramy — dostępna w czerni lub bieli — pozwala żywemu wyświetlaczowi pikselowemu być w centrum uwagi. Nie chodzi tylko o pokazywanie czasu; chodzi o wyrażenie siebie."
+  showcase_list1:
+    en: "Premium build quality"
+    de: "Premium-Verarbeitungsqualität"
+    fr: "Qualité de fabrication premium"
+    es: "Calidad de construcción premium"
+    it: "Qualità costruttiva premium"
+    pl: "Najwyższa jakość wykonania"
+  showcase_list2:
+    en: "Minimalist design language"
+    de: "Minimalistische Designsprache"
+    fr: "Langage de design minimaliste"
+    es: "Lenguaje de diseño minimalista"
+    it: "Linguaggio di design minimalista"
+    pl: "Minimalistyczny język designu"
+  showcase_list3:
+    en: "Perfect desktop companion"
+    de: "Perfekter Desktop-Begleiter"
+    fr: "Compagnon de bureau parfait"
+    es: "Compañero de escritorio perfecto"
+    it: "Compagno da scrivania perfetto"
+    pl: "Idealny towarzysz na biurko"
+
+# ===========================================
+# DESIGN SECTION
+# ===========================================
+design:
+  tag:
+    en: "More Than Technology"
+    de: "Mehr als Technologie"
+    fr: "Plus que de la technologie"
+    es: "Más que tecnología"
+    it: "Più che tecnologia"
+    pl: "Więcej niż technologia"
+  title_line1:
+    en: "Not Just Another"
+    de: "Nicht nur ein weiteres"
+    fr: "Pas juste un autre"
+    es: "No solo otro"
+    it: "Non solo un altro"
+    pl: "Nie tylko kolejny"
+  title_line2:
+    en: "LED Gadget."
+    de: "LED-Gadget."
+    fr: "gadget LED."
+    es: "gadget LED."
+    it: "gadget LED."
+    pl: "gadżet LED."
+  intro:
+    en: "The PXL Clock isn't a blinking toy for the kids' room. It's a statement piece — a beautiful furniture object that commands attention in living rooms, studios, and offices. Like an ever-changing painting, it draws envious glances from visitors who've never seen anything quite like it."
+    de: "Die PXL Clock ist kein blinkendes Spielzeug fürs Kinderzimmer. Es ist ein Statement-Stück — ein schönes Möbelobjekt, das in Wohnzimmern, Studios und Büros Aufmerksamkeit erregt. Wie ein sich ständig veränderndes Gemälde zieht es neidische Blicke von Besuchern auf sich, die noch nie etwas Vergleichbares gesehen haben."
+    fr: "La PXL Clock n'est pas un jouet clignotant pour la chambre des enfants. C'est une pièce de caractère — un bel objet de mobilier qui attire l'attention dans les salons, studios et bureaux. Comme une peinture en constante évolution, elle attire les regards envieux des visiteurs qui n'ont jamais rien vu de tel."
+    es: "El PXL Clock no es un juguete parpadeante para la habitación de los niños. Es una pieza de declaración — un hermoso objeto de mobiliario que llama la atención en salas de estar, estudios y oficinas. Como una pintura en constante cambio, atrae las miradas envidiosas de los visitantes que nunca han visto nada parecido."
+    it: "Il PXL Clock non è un giocattolo lampeggiante per la cameretta dei bambini. È un pezzo di carattere — un bellissimo oggetto d'arredo che attira l'attenzione in soggiorni, studi e uffici. Come un dipinto in continua evoluzione, attira gli sguardi invidiosi dei visitatori che non hanno mai visto nulla di simile."
+    pl: "PXL Clock to nie migający gadżet do pokoju dziecięcego. To element dekoracyjny — piękny obiekt meblowy, który przyciąga uwagę w salonach, studiach i biurach. Jak ciągle zmieniający się obraz, przyciąga zazdrosne spojrzenia gości, którzy nigdy nie widzieli czegoś podobnego."
+  art_title:
+    en: "Art Needs No Explanation"
+    de: "Kunst braucht keine Erklärung"
+    fr: "L'art n'a pas besoin d'explication"
+    es: "El arte no necesita explicación"
+    it: "L'arte non ha bisogno di spiegazioni"
+    pl: "Sztuka nie wymaga wyjaśnień"
+  art_quote:
+    en: "Art doesn't need to be explained — it simply works. The PXL Clock isn't art, but it has the same effect. At first glance, you feel the depth and vibrancy. Look closer, and you discover countless fascinating details: each pixel glows from its own light source, every cell has its own small world, the lines vary in brightness, and the reflections in the glass bring everything to life."
+    de: "Kunst muss nicht erklärt werden — sie funktioniert einfach. Die PXL Clock ist keine Kunst, aber sie hat denselben Effekt. Auf den ersten Blick spürt man die Tiefe und Lebendigkeit. Schaut man genauer hin, entdeckt man unzählige faszinierende Details: Jeder Pixel leuchtet aus seiner eigenen Lichtquelle, jede Zelle hat ihre eigene kleine Welt, die Linien variieren in der Helligkeit, und die Reflexionen im Glas bringen alles zum Leben."
+    fr: "L'art n'a pas besoin d'être expliqué — il fonctionne simplement. La PXL Clock n'est pas de l'art, mais elle a le même effet. Au premier regard, vous ressentez la profondeur et la vivacité. Regardez de plus près, et vous découvrez d'innombrables détails fascinants : chaque pixel brille de sa propre source lumineuse, chaque cellule a son propre petit monde, les lignes varient en luminosité, et les reflets dans le verre donnent vie à tout."
+    es: "El arte no necesita explicación — simplemente funciona. El PXL Clock no es arte, pero tiene el mismo efecto. A primera vista, sientes la profundidad y la vivacidad. Mira más de cerca y descubrirás innumerables detalles fascinantes: cada píxel brilla desde su propia fuente de luz, cada celda tiene su propio pequeño mundo, las líneas varían en brillo, y los reflejos en el vidrio dan vida a todo."
+    it: "L'arte non ha bisogno di essere spiegata — funziona semplicemente. Il PXL Clock non è arte, ma ha lo stesso effetto. A prima vista, senti la profondità e la vivacità. Guarda più da vicino e scoprirai innumerevoli dettagli affascinanti: ogni pixel brilla dalla propria fonte di luce, ogni cella ha il suo piccolo mondo, le linee variano in luminosità e i riflessi nel vetro danno vita a tutto."
+    pl: "Sztuka nie potrzebuje wyjaśnień — po prostu działa. PXL Clock nie jest sztuką, ale ma ten sam efekt. Na pierwszy rzut oka czujesz głębię i żywotność. Przyjrzyj się bliżej, a odkryjesz niezliczone fascynujące szczegóły: każdy piksel świeci z własnego źródła światła, każda komórka ma swój własny mały świat, linie różnią się jasnością, a odbicia w szkle ożywiają wszystko."
+  art_desc:
+    en: "A stylish accessory with real depth — inviting you to discover something new, again and again."
+    de: "Ein stilvolles Accessoire mit echter Tiefe — lädt Sie ein, immer wieder Neues zu entdecken."
+    fr: "Un accessoire élégant avec une vraie profondeur — vous invitant à découvrir quelque chose de nouveau, encore et encore."
+    es: "Un accesorio elegante con verdadera profundidad — invitándote a descubrir algo nuevo, una y otra vez."
+    it: "Un accessorio elegante con vera profondità — che ti invita a scoprire qualcosa di nuovo, ancora e ancora."
+    pl: "Stylowy dodatek z prawdziwą głębią — zapraszający do odkrywania czegoś nowego, raz za razem."
+  fire_title:
+    en: "576 Small Fires"
+    de: "576 kleine Feuer"
+    fr: "576 petits feux"
+    es: "576 pequeños fuegos"
+    it: "576 piccoli fuochi"
+    pl: "576 małych ogni"
+  fire_quote:
+    en: "Fire has vanished from our daily lives — it only burns in furnaces, engines, and heaters now. The PXL Clock is like a small campfire — it radiates something meditative. We've observed how people who immerse themselves in its gentle animations and flowing color gradients quickly become fascinated."
+    de: "Feuer ist aus unserem Alltag verschwunden — es brennt nur noch in Öfen, Motoren und Heizungen. Die PXL Clock ist wie ein kleines Lagerfeuer — sie strahlt etwas Meditatives aus. Wir haben beobachtet, wie Menschen, die sich in ihre sanften Animationen und fließenden Farbverläufe vertiefen, schnell fasziniert werden."
+    fr: "Le feu a disparu de notre vie quotidienne — il ne brûle plus que dans les fours, les moteurs et les radiateurs. La PXL Clock est comme un petit feu de camp — elle dégage quelque chose de méditatif. Nous avons observé comment les gens qui s'immergent dans ses animations douces et ses dégradés de couleurs fluides deviennent rapidement fascinés."
+    es: "El fuego ha desaparecido de nuestra vida diaria — ahora solo arde en hornos, motores y calentadores. El PXL Clock es como una pequeña fogata — irradia algo meditativo. Hemos observado cómo las personas que se sumergen en sus suaves animaciones y degradados de colores fluidos rápidamente quedan fascinadas."
+    it: "Il fuoco è scomparso dalla nostra vita quotidiana — brucia solo in forni, motori e riscaldamenti ora. Il PXL Clock è come un piccolo falò — irradia qualcosa di meditativo. Abbiamo osservato come le persone che si immergono nelle sue dolci animazioni e nei gradienti di colore fluidi diventano rapidamente affascinate."
+    pl: "Ogień zniknął z naszego codziennego życia — teraz płonie tylko w piecach, silnikach i grzejnikach. PXL Clock jest jak małe ognisko — emanuje czymś medytacyjnym. Zaobserwowaliśmy, jak ludzie zanurzający się w jego delikatnych animacjach i płynnych gradientach kolorów szybko stają się zafascynowani."
+  fire_desc:
+    en: "No moment is like another. Nothing repeats. The image constantly changes in a calming, almost hypnotic way. You can simply sit, watch the clock, and find complete peace — while time passes quietly and serenely."
+    de: "Kein Moment ist wie der andere. Nichts wiederholt sich. Das Bild ändert sich ständig auf eine beruhigende, fast hypnotische Weise. Sie können einfach sitzen, die Uhr betrachten und vollkommene Ruhe finden — während die Zeit ruhig und gelassen vergeht."
+    fr: "Aucun moment n'est semblable à un autre. Rien ne se répète. L'image change constamment de manière apaisante, presque hypnotique. Vous pouvez simplement vous asseoir, regarder l'horloge et trouver une paix complète — tandis que le temps passe tranquillement et sereinement."
+    es: "Ningún momento es igual a otro. Nada se repite. La imagen cambia constantemente de una manera calmante, casi hipnótica. Puedes simplemente sentarte, mirar el reloj y encontrar paz completa — mientras el tiempo pasa tranquila y serenamente."
+    it: "Nessun momento è uguale a un altro. Niente si ripete. L'immagine cambia costantemente in modo calmante, quasi ipnotico. Puoi semplicemente sederti, guardare l'orologio e trovare pace completa — mentre il tempo passa tranquillamente e serenamente."
+    pl: "Żaden moment nie jest taki sam. Nic się nie powtarza. Obraz ciągle się zmienia w uspokajający, niemal hipnotyczny sposób. Możesz po prostu usiąść, patrzeć na zegar i znaleźć pełny spokój — podczas gdy czas płynie cicho i spokojnie."
+  material1_title:
+    en: "Real Float Glass"
+    de: "Echtes Floatglas"
+    fr: "Vrai verre flotté"
+    es: "Vidrio flotado real"
+    it: "Vero vetro float"
+    pl: "Prawdziwe szkło float"
+  material1_desc:
+    en: "No plastic. Genuine glass surface with beautiful light reflections and premium feel."
+    de: "Kein Plastik. Echte Glasoberfläche mit schönen Lichtreflexionen und Premium-Gefühl."
+    fr: "Pas de plastique. Surface en verre véritable avec de belles réflexions lumineuses et une sensation premium."
+    es: "Sin plástico. Superficie de vidrio genuino con hermosos reflejos de luz y sensación premium."
+    it: "Niente plastica. Superficie in vetro genuino con bellissimi riflessi di luce e sensazione premium."
+    pl: "Bez plastiku. Prawdziwa szklana powierzchnia z pięknymi odbiciami światła i premium wyglądem."
+  material2_title:
+    en: "Handcrafted Frame"
+    de: "Handgefertigter Rahmen"
+    fr: "Cadre artisanal"
+    es: "Marco artesanal"
+    it: "Cornice artigianale"
+    pl: "Ręcznie wykonana rama"
+  material2_desc:
+    en: "Each frame assembled by hand. Available in elegant black or white finish."
+    de: "Jeder Rahmen von Hand montiert. Erhältlich in elegantem Schwarz oder Weiß."
+    fr: "Chaque cadre assemblé à la main. Disponible en finition noire ou blanche élégante."
+    es: "Cada marco ensamblado a mano. Disponible en acabado negro o blanco elegante."
+    it: "Ogni cornice assemblata a mano. Disponibile in elegante finitura nera o bianca."
+    pl: "Każda rama montowana ręcznie. Dostępna w eleganckim wykończeniu czarnym lub białym."
+  material3_title:
+    en: "576 Premium LEDs"
+    de: "576 Premium-LEDs"
+    fr: "576 LEDs premium"
+    es: "576 LEDs premium"
+    it: "576 LED premium"
+    pl: "576 premium diod LED"
+  material3_desc:
+    en: "Super-bright RGB LEDs that shine in all colors — even in bright sunlight."
+    de: "Superhelle RGB-LEDs, die in allen Farben leuchten — auch bei hellem Sonnenlicht."
+    fr: "Des LEDs RGB super-brillantes qui brillent dans toutes les couleurs — même en plein soleil."
+    es: "LEDs RGB súper brillantes que brillan en todos los colores — incluso con luz solar brillante."
+    it: "LED RGB super-luminosi che brillano in tutti i colori — anche alla luce del sole."
+    pl: "Super jasne diody RGB LED świecące we wszystkich kolorach — nawet w jasnym świetle słonecznym."
+  material4_title:
+    en: "27.5 × 27.5 × 6 cm"
+    de: "27,5 × 27,5 × 6 cm"
+    fr: "27,5 × 27,5 × 6 cm"
+    es: "27,5 × 27,5 × 6 cm"
+    it: "27,5 × 27,5 × 6 cm"
+    pl: "27,5 × 27,5 × 6 cm"
+  material4_desc:
+    en: "Compact dimensions. Weighs approx. 2 kg. A presence without overwhelming."
+    de: "Kompakte Abmessungen. Wiegt ca. 2 kg. Präsenz ohne zu überwältigen."
+    fr: "Dimensions compactes. Pèse environ 2 kg. Une présence sans submerger."
+    es: "Dimensiones compactas. Pesa aprox. 2 kg. Una presencia sin abrumar."
+    it: "Dimensioni compatte. Pesa circa 2 kg. Una presenza senza sopraffare."
+    pl: "Kompaktowe wymiary. Waży ok. 2 kg. Obecność bez przytłaczania."
+
+# ===========================================
+# GALLERY
+# ===========================================
+gallery:
+  tag:
+    en: "Gallery"
+    de: "Galerie"
+    fr: "Galerie"
+    es: "Galería"
+    it: "Galleria"
+    pl: "Galeria"
+  title_line1:
+    en: "Infinite Possibilities."
+    de: "Unendliche Möglichkeiten."
+    fr: "Possibilités infinies."
+    es: "Posibilidades infinitas."
+    it: "Possibilità infinite."
+    pl: "Nieskończone możliwości."
+  title_line2:
+    en: "One Display."
+    de: "Ein Display."
+    fr: "Un seul écran."
+    es: "Una pantalla."
+    it: "Un solo display."
+    pl: "Jeden wyświetlacz."
+  label_clock:
+    en: "Clock Faces"
+    de: "Zifferblätter"
+    fr: "Cadrans"
+    es: "Carátulas"
+    it: "Quadranti"
+    pl: "Tarcze zegara"
+  label_pixel:
+    en: "Pixel Art"
+    de: "Pixel-Art"
+    fr: "Pixel Art"
+    es: "Pixel Art"
+    it: "Pixel Art"
+    pl: "Pixel Art"
+  label_retro:
+    en: "Retro Gaming"
+    de: "Retro Gaming"
+    fr: "Jeux rétro"
+    es: "Juegos retro"
+    it: "Retro Gaming"
+    pl: "Retro Gaming"
+  label_lifestyle:
+    en: "In Your Space"
+    de: "In Ihrem Raum"
+    fr: "Dans votre espace"
+    es: "En tu espacio"
+    it: "Nel tuo spazio"
+    pl: "W Twojej przestrzeni"
+
+# ===========================================
+# APP
+# ===========================================
+app:
+  tag:
+    en: "Companion App"
+    de: "Begleit-App"
+    fr: "Application compagnon"
+    es: "Aplicación complementaria"
+    it: "App compagna"
+    pl: "Aplikacja towarzysząca"
+  title_line1:
+    en: "Your Clock."
+    de: "Ihre Uhr."
+    fr: "Votre horloge."
+    es: "Tu reloj."
+    it: "Il tuo orologio."
+    pl: "Twój zegar."
+  title_line2:
+    en: "Your Rules."
+    de: "Ihre Regeln."
+    fr: "Vos règles."
+    es: "Tus reglas."
+    it: "Le tue regole."
+    pl: "Twoje zasady."
+  desc:
+    en: "The PXL App puts complete control at your fingertips. Configure every aspect of your clock — from stunning clock faces to smart automations that adapt to your lifestyle."
+    de: "Die PXL App gibt Ihnen die volle Kontrolle. Konfigurieren Sie jeden Aspekt Ihrer Uhr — von atemberaubenden Zifferblättern bis hin zu intelligenten Automatisierungen, die sich Ihrem Lebensstil anpassen."
+    fr: "L'application PXL met le contrôle total à portée de main. Configurez chaque aspect de votre horloge — des cadrans époustouflants aux automatisations intelligentes qui s'adaptent à votre style de vie."
+    es: "La aplicación PXL pone el control completo en tus manos. Configura cada aspecto de tu reloj — desde impresionantes carátulas hasta automatizaciones inteligentes que se adaptan a tu estilo de vida."
+    it: "L'app PXL mette il controllo completo a portata di mano. Configura ogni aspetto del tuo orologio — dai quadranti stupendi alle automazioni intelligenti che si adattano al tuo stile di vita."
+    pl: "Aplikacja PXL daje Ci pełną kontrolę. Skonfiguruj każdy aspekt swojego zegara — od oszałamiających tarcz po inteligentne automatyzacje dostosowane do Twojego stylu życia."
+  feature1_title:
+    en: "Clock Faces"
+    de: "Zifferblätter"
+    fr: "Cadrans"
+    es: "Carátulas"
+    it: "Quadranti"
+    pl: "Tarcze zegara"
+  feature1_desc:
+    en: "Browse dozens of unique clock faces. Minimalist, playful, artistic — find your style."
+    de: "Durchstöbern Sie Dutzende einzigartiger Zifferblätter. Minimalistisch, verspielt, künstlerisch — finden Sie Ihren Stil."
+    fr: "Parcourez des dizaines de cadrans uniques. Minimaliste, ludique, artistique — trouvez votre style."
+    es: "Explora docenas de carátulas únicas. Minimalista, juguetona, artística — encuentra tu estilo."
+    it: "Sfoglia dozzine di quadranti unici. Minimalista, giocoso, artistico — trova il tuo stile."
+    pl: "Przeglądaj dziesiątki unikalnych tarcz. Minimalistyczne, zabawne, artystyczne — znajdź swój styl."
+  feature2_title:
+    en: "Day & Night Mode"
+    de: "Tag & Nacht Modus"
+    fr: "Mode jour & nuit"
+    es: "Modo día y noche"
+    it: "Modalità giorno e notte"
+    pl: "Tryb dzienny i nocny"
+  feature2_desc:
+    en: "Set schedules for brightness. Dim at night, vibrant by day — automatically."
+    de: "Stellen Sie Zeitpläne für die Helligkeit ein. Gedimmt in der Nacht, lebendig am Tag — automatisch."
+    fr: "Définissez des horaires pour la luminosité. Tamisé la nuit, vibrant le jour — automatiquement."
+    es: "Establece horarios para el brillo. Tenue de noche, vibrante de día — automáticamente."
+    it: "Imposta programmi per la luminosità. Attenuato di notte, vibrante di giorno — automaticamente."
+    pl: "Ustaw harmonogramy jasności. Przyciemniony w nocy, żywy w dzień — automatycznie."
+  feature3_title:
+    en: "WiFi Setup"
+    de: "WiFi-Einrichtung"
+    fr: "Configuration WiFi"
+    es: "Configuración WiFi"
+    it: "Configurazione WiFi"
+    pl: "Konfiguracja WiFi"
+  feature3_desc:
+    en: "Easy wireless configuration. Connect your clock to your network in seconds."
+    de: "Einfache drahtlose Konfiguration. Verbinden Sie Ihre Uhr in Sekunden mit Ihrem Netzwerk."
+    fr: "Configuration sans fil facile. Connectez votre horloge à votre réseau en quelques secondes."
+    es: "Configuración inalámbrica fácil. Conecta tu reloj a tu red en segundos."
+    it: "Configurazione wireless facile. Connetti il tuo orologio alla rete in pochi secondi."
+    pl: "Łatwa konfiguracja bezprzewodowa. Połącz zegar z siecią w kilka sekund."
+  feature4_title:
+    en: "Multi-Clock"
+    de: "Multi-Clock"
+    fr: "Multi-horloge"
+    es: "Multi-reloj"
+    it: "Multi-orologio"
+    pl: "Multi-zegar"
+  feature4_desc:
+    en: "Own multiple PXL Clocks? Manage them all from one app. Sync or individualize."
+    de: "Besitzen Sie mehrere PXL Clocks? Verwalten Sie alle von einer App aus. Synchronisieren oder individualisieren."
+    fr: "Vous possédez plusieurs PXL Clocks? Gérez-les tous depuis une seule application. Synchronisez ou individualisez."
+    es: "¿Tienes múltiples PXL Clocks? Gestiónralos todos desde una app. Sincroniza o individualiza."
+    it: "Possiedi più PXL Clock? Gestiscili tutti da un'unica app. Sincronizza o personalizza."
+    pl: "Masz wiele zegarów PXL Clock? Zarządzaj nimi wszystkimi z jednej aplikacji. Synchronizuj lub indywidualizuj."
+  store_google_label:
+    en: "Get it on"
+    de: "Jetzt bei"
+    fr: "Télécharger sur"
+    es: "Disponible en"
+    it: "Scarica su"
+    pl: "Pobierz z"
+  store_google:
+    en: "Google Play"
+    de: "Google Play"
+    fr: "Google Play"
+    es: "Google Play"
+    it: "Google Play"
+    pl: "Google Play"
+  store_apple_label:
+    en: "Coming to"
+    de: "Bald im"
+    fr: "Bientôt sur"
+    es: "Próximamente en"
+    it: "Presto su"
+    pl: "Wkrótce w"
+  store_apple:
+    en: "App Store"
+    de: "App Store"
+    fr: "App Store"
+    es: "App Store"
+    it: "App Store"
+    pl: "App Store"
+
+# ===========================================
+# CODE
+# ===========================================
+code:
+  tag:
+    en: "For Developers"
+    de: "Für Entwickler"
+    fr: "Pour les développeurs"
+    es: "Para desarrolladores"
+    it: "Per sviluppatori"
+    pl: "Dla programistów"
+  title_line1:
+    en: "Your Code."
+    de: "Ihr Code."
+    fr: "Votre code."
+    es: "Tu código."
+    it: "Il tuo codice."
+    pl: "Twój kod."
+  title_line2:
+    en: "Your Pixels."
+    de: "Ihre Pixel."
+    fr: "Vos pixels."
+    es: "Tus píxeles."
+    it: "I tuoi pixel."
+    pl: "Twoje piksele."
+  desc:
+    en: "Build custom applications using C# or F#. The PXL SDK provides everything you need to create stunning visualizations, games, and more."
+    de: "Erstellen Sie benutzerdefinierte Anwendungen mit C# oder F#. Das PXL SDK bietet alles, was Sie brauchen, um atemberaubende Visualisierungen, Spiele und mehr zu erstellen."
+    fr: "Créez des applications personnalisées avec C# ou F#. Le SDK PXL fournit tout ce dont vous avez besoin pour créer des visualisations époustouflantes, des jeux et plus encore."
+    es: "Crea aplicaciones personalizadas usando C# o F#. El SDK de PXL proporciona todo lo que necesitas para crear visualizaciones impresionantes, juegos y más."
+    it: "Crea applicazioni personalizzate usando C# o F#. L'SDK PXL fornisce tutto il necessario per creare visualizzazioni mozzafiato, giochi e altro."
+    pl: "Twórz niestandardowe aplikacje w C# lub F#. SDK PXL zapewnia wszystko, czego potrzebujesz do tworzenia oszałamiających wizualizacji, gier i więcej."
+  btn_github:
+    en: "View on GitHub"
+    de: "Auf GitHub ansehen"
+    fr: "Voir sur GitHub"
+    es: "Ver en GitHub"
+    it: "Visualizza su GitHub"
+    pl: "Zobacz na GitHub"
+
+# ===========================================
+# SPECS
+# ===========================================
+specs:
+  tag:
+    en: "Technical Specs"
+    de: "Technische Daten"
+    fr: "Spécifications techniques"
+    es: "Especificaciones técnicas"
+    it: "Specifiche tecniche"
+    pl: "Specyfikacja techniczna"
+  title_line1:
+    en: "Built to Last."
+    de: "Gebaut für die Ewigkeit."
+    fr: "Construit pour durer."
+    es: "Construido para durar."
+    it: "Costruito per durare."
+    pl: "Zbudowany, by przetrwać."
+  title_line2:
+    en: "Built to Impress."
+    de: "Gebaut zum Beeindrucken."
+    fr: "Construit pour impressionner."
+    es: "Construido para impresionar."
+    it: "Costruito per impressionare."
+    pl: "Zbudowany, by zachwycać."
+  label_resolution:
+    en: "Pixel Resolution"
+    de: "Pixelauflösung"
+    fr: "Résolution en pixels"
+    es: "Resolución de píxeles"
+    it: "Risoluzione pixel"
+    pl: "Rozdzielczość pikseli"
+  label_leds:
+    en: "RGB LEDs"
+    de: "RGB-LEDs"
+    fr: "LEDs RGB"
+    es: "LEDs RGB"
+    it: "LED RGB"
+    pl: "Diody RGB LED"
+  label_colors:
+    en: "Colors"
+    de: "Farben"
+    fr: "Couleurs"
+    es: "Colores"
+    it: "Colori"
+    pl: "Kolory"
+  label_connectivity:
+    en: "Connectivity"
+    de: "Konnektivität"
+    fr: "Connectivité"
+    es: "Conectividad"
+    it: "Connettività"
+    pl: "Łączność"
+  label_updates:
+    en: "Updates"
+    de: "Updates"
+    fr: "Mises à jour"
+    es: "Actualizaciones"
+    it: "Aggiornamenti"
+    pl: "Aktualizacje"
+  label_sdk:
+    en: "SDK Support"
+    de: "SDK-Unterstützung"
+    fr: "Support SDK"
+    es: "Soporte SDK"
+    it: "Supporto SDK"
+    pl: "Wsparcie SDK"
+  detail_display:
+    en: "Display"
+    de: "Display"
+    fr: "Affichage"
+    es: "Pantalla"
+    it: "Display"
+    pl: "Wyświetlacz"
+  detail_display_1:
+    en: "24x24 RGB LED Matrix"
+    de: "24x24 RGB-LED-Matrix"
+    fr: "Matrice LED RGB 24x24"
+    es: "Matriz LED RGB 24x24"
+    it: "Matrice LED RGB 24x24"
+    pl: "Matryca LED RGB 24x24"
+  detail_display_2:
+    en: "576 individually addressable pixels"
+    de: "576 individuell adressierbare Pixel"
+    fr: "576 pixels adressables individuellement"
+    es: "576 píxeles direccionables individualmente"
+    it: "576 pixel indirizzabili singolarmente"
+    pl: "576 indywidualnie adresowalnych pikseli"
+  detail_display_3:
+    en: "16.7 million color depth"
+    de: "16,7 Millionen Farbtiefe"
+    fr: "Profondeur de couleur de 16,7 millions"
+    es: "Profundidad de color de 16,7 millones"
+    it: "Profondità colore di 16,7 milioni"
+    pl: "16,7 miliona głębi kolorów"
+  detail_display_4:
+    en: "Adjustable brightness"
+    de: "Einstellbare Helligkeit"
+    fr: "Luminosité réglable"
+    es: "Brillo ajustable"
+    it: "Luminosità regolabile"
+    pl: "Regulowana jasność"
+  detail_materials:
+    en: "Materials"
+    de: "Materialien"
+    fr: "Matériaux"
+    es: "Materiales"
+    it: "Materiali"
+    pl: "Materiały"
+  detail_materials_1:
+    en: "Handcrafted glass front"
+    de: "Handgefertigte Glasfront"
+    fr: "Façade en verre artisanale"
+    es: "Frente de vidrio artesanal"
+    it: "Frontale in vetro artigianale"
+    pl: "Ręcznie wykonany szklany front"
+  detail_materials_2:
+    en: "Premium aluminum frame"
+    de: "Premium-Aluminiumrahmen"
+    fr: "Cadre en aluminium premium"
+    es: "Marco de aluminio premium"
+    it: "Cornice in alluminio premium"
+    pl: "Aluminiowa rama premium"
+  detail_materials_3:
+    en: "Available in Black or White"
+    de: "Erhältlich in Schwarz oder Weiß"
+    fr: "Disponible en noir ou blanc"
+    es: "Disponible en negro o blanco"
+    it: "Disponibile in nero o bianco"
+    pl: "Dostępny w czerni lub bieli"
+  detail_materials_4:
+    en: "Precision CNC machined"
+    de: "Präzisions-CNC-gefertigt"
+    fr: "Usiné CNC de précision"
+    es: "Mecanizado CNC de precisión"
+    it: "Lavorato CNC di precisione"
+    pl: "Precyzyjnie obrobiony CNC"
+  detail_connectivity:
+    en: "Connectivity"
+    de: "Konnektivität"
+    fr: "Connectivité"
+    es: "Conectividad"
+    it: "Connettività"
+    pl: "Łączność"
+  detail_connectivity_1:
+    en: "WiFi 802.11 b/g/n"
+    de: "WiFi 802.11 b/g/n"
+    fr: "WiFi 802.11 b/g/n"
+    es: "WiFi 802.11 b/g/n"
+    it: "WiFi 802.11 b/g/n"
+    pl: "WiFi 802.11 b/g/n"
+  detail_connectivity_2:
+    en: "Companion mobile app"
+    de: "Begleitende Mobil-App"
+    fr: "Application mobile compagnon"
+    es: "Aplicación móvil complementaria"
+    it: "App mobile compagna"
+    pl: "Towarzysząca aplikacja mobilna"
+  detail_connectivity_3:
+    en: "Cloud synchronization"
+    de: "Cloud-Synchronisierung"
+    fr: "Synchronisation cloud"
+    es: "Sincronización en la nube"
+    it: "Sincronizzazione cloud"
+    pl: "Synchronizacja w chmurze"
+  detail_connectivity_4:
+    en: "Developer API access"
+    de: "Entwickler-API-Zugang"
+    fr: "Accès API développeur"
+    es: "Acceso a API para desarrolladores"
+    it: "Accesso API sviluppatore"
+    pl: "Dostęp do API dla programistów"
+
+# ===========================================
+# CTA
+# ===========================================
+cta:
+  badge:
+    en: "Limited to 100 Units"
+    de: "Limitiert auf 100 Stück"
+    fr: "Limité à 100 unités"
+    es: "Limitado a 100 unidades"
+    it: "Limitato a 100 unità"
+    pl: "Limitowane do 100 sztuk"
+  title_line1:
+    en: "Ready to Own"
+    de: "Bereit, ein"
+    fr: "Prêt à posséder"
+    es: "¿Listo para poseer"
+    it: "Pronto a possedere"
+    pl: "Gotowy, by posiadać"
+  title_line2:
+    en: "a Piece of Art?"
+    de: "Kunstwerk zu besitzen?"
+    fr: "une œuvre d'art?"
+    es: "una obra de arte?"
+    it: "un'opera d'arte?"
+    pl: "dzieło sztuki?"
+  desc:
+    en: "Join the exclusive first batch of PXL Clock owners. Each unit is numbered and comes with a certificate of authenticity."
+    de: "Werden Sie Teil der exklusiven ersten Charge von PXL Clock-Besitzern. Jedes Stück ist nummeriert und wird mit einem Echtheitszertifikat geliefert."
+    fr: "Rejoignez le premier lot exclusif de propriétaires de PXL Clock. Chaque unité est numérotée et accompagnée d'un certificat d'authenticité."
+    es: "Únete al exclusivo primer lote de propietarios de PXL Clock. Cada unidad está numerada y viene con un certificado de autenticidad."
+    it: "Unisciti al primo lotto esclusivo di proprietari di PXL Clock. Ogni unità è numerata e viene fornita con un certificato di autenticità."
+    pl: "Dołącz do ekskluzywnej pierwszej partii właścicieli PXL Clock. Każda sztuka jest numerowana i dostarczana z certyfikatem autentyczności."
+  price_label:
+    en: "Starting at"
+    de: "Ab"
+    fr: "À partir de"
+    es: "Desde"
+    it: "A partire da"
+    pl: "Od"
+  price_note:
+    en: "Use code <strong>fsharp</strong> for EUR 50 off"
+    de: "Code <strong>fsharp</strong> für EUR 50 Rabatt"
+    fr: "Utilisez le code <strong>fsharp</strong> pour EUR 50 de réduction"
+    es: "Usa el código <strong>fsharp</strong> para EUR 50 de descuento"
+    it: "Usa il codice <strong>fsharp</strong> per EUR 50 di sconto"
+    pl: "Użyj kodu <strong>fsharp</strong> i otrzymaj EUR 50 zniżki"
+  btn:
+    en: "Pre-Order Your PXL Clock"
+    de: "PXL Clock vorbestellen"
+    fr: "Précommander votre PXL Clock"
+    es: "Pre-ordenar tu PXL Clock"
+    it: "Pre-ordina il tuo PXL Clock"
+    pl: "Zamów swój PXL Clock"
+  shipping_note:
+    en: "Free shipping within EU. Ships Q1 2025."
+    de: "Kostenloser Versand innerhalb der EU. Lieferung Q1 2025."
+    fr: "Livraison gratuite dans l'UE. Expédition T1 2025."
+    es: "Envío gratis dentro de la UE. Envío Q1 2025."
+    it: "Spedizione gratuita nell'UE. Spedizione Q1 2025."
+    pl: "Darmowa wysyłka w UE. Wysyłka Q1 2025."
+
+# ===========================================
+# FOOTER
+# ===========================================
+footer:
+  tagline:
+    en: "Time, Reimagined in Pixels"
+    de: "Zeit, neu gedacht in Pixeln"
+    fr: "Le temps, réinventé en pixels"
+    es: "El tiempo, reimaginado en píxeles"
+    it: "Il tempo, reimmaginato in pixel"
+    pl: "Czas na nowo w pikselach"
+  col_product:
+    en: "Product"
+    de: "Produkt"
+    fr: "Produit"
+    es: "Producto"
+    it: "Prodotto"
+    pl: "Produkt"
+  link_features:
+    en: "Features"
+    de: "Funktionen"
+    fr: "Fonctionnalités"
+    es: "Características"
+    it: "Caratteristiche"
+    pl: "Funkcje"
+  link_design:
+    en: "Design"
+    de: "Design"
+    fr: "Design"
+    es: "Diseño"
+    it: "Design"
+    pl: "Design"
+  link_specs:
+    en: "Specifications"
+    de: "Spezifikationen"
+    fr: "Spécifications"
+    es: "Especificaciones"
+    it: "Specifiche"
+    pl: "Specyfikacja"
+  col_developers:
+    en: "Developers"
+    de: "Entwickler"
+    fr: "Développeurs"
+    es: "Desarrolladores"
+    it: "Sviluppatori"
+    pl: "Programiści"
+  link_github:
+    en: "GitHub"
+    de: "GitHub"
+    fr: "GitHub"
+    es: "GitHub"
+    it: "GitHub"
+    pl: "GitHub"
+  link_docs:
+    en: "Documentation"
+    de: "Dokumentation"
+    fr: "Documentation"
+    es: "Documentación"
+    it: "Documentazione"
+    pl: "Dokumentacja"
+  link_discord:
+    en: "Discord Community"
+    de: "Discord-Community"
+    fr: "Communauté Discord"
+    es: "Comunidad Discord"
+    it: "Community Discord"
+    pl: "Społeczność Discord"
+  col_company:
+    en: "Company"
+    de: "Unternehmen"
+    fr: "Entreprise"
+    es: "Empresa"
+    it: "Azienda"
+    pl: "Firma"
+  link_about:
+    en: "About Us"
+    de: "Über uns"
+    fr: "À propos"
+    es: "Sobre nosotros"
+    it: "Chi siamo"
+    pl: "O nas"
+  link_contact:
+    en: "Contact"
+    de: "Kontakt"
+    fr: "Contact"
+    es: "Contacto"
+    it: "Contatto"
+    pl: "Kontakt"
+  link_bluesky:
+    en: "Bluesky"
+    de: "Bluesky"
+    fr: "Bluesky"
+    es: "Bluesky"
+    it: "Bluesky"
+    pl: "Bluesky"
+  copyright:
+    en: "© 2025 Cumin & Potato GmbH. All rights reserved."
+    de: "© 2025 Cumin & Potato GmbH. Alle Rechte vorbehalten."
+    fr: "© 2025 Cumin & Potato GmbH. Tous droits réservés."
+    es: "© 2025 Cumin & Potato GmbH. Todos los derechos reservados."
+    it: "© 2025 Cumin & Potato GmbH. Tutti i diritti riservati."
+    pl: "© 2025 Cumin & Potato GmbH. Wszelkie prawa zastrzeżone."
