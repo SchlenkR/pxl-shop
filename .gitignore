@@ -1,8 +1,8 @@
 # Dependencies
 node_modules/
 
-# Build output
-dist/
+# Build output (dist is committed for GH Pages deployment)
+# dist/
 
 CLAUDE.md
 

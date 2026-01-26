@@ -46,9 +46,9 @@ nav:
     es: "App"
     it: "App"
     pl: "Aplikacja"
-  appdev:
+  code:
     en: "Developer"
-    de: "Entwickler"
+    de: "Coding"
     fr: "Développeur"
     es: "Desarrollador"
     it: "Sviluppatore"
@@ -607,8 +607,8 @@ app:
 # ===========================================
 code:
   tag:
-    en: "For Developers"
-    de: "Für Entwickler"
+    en: "For Coders"
+    de: "Für Coders"
     fr: "Pour les développeurs"
     es: "Para desarrolladores"
     it: "Per sviluppatori"

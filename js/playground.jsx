@@ -2,7 +2,21 @@ import { useRef, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import { LedMatrix, configs } from 'pxl-device-view';
 import * as Pxl from '@pxl/api';
-import 'pxl-device-view/src/LedMatrix.css';
+
+// Scoped styles (no global CSS import to avoid conflicts)
+const style = document.createElement('style');
+style.textContent = `
+  #pxl-playground .ledMatrix {
+    display: grid;
+    gap: 3px;
+    width: 100%;
+    height: 100%;
+  }
+  #pxl-playground .led {
+    border-radius: 3px;
+  }
+`;
+document.head.appendChild(style);
 
 const WIDTH = 24;
 const HEIGHT = 24;

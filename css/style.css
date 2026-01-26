@@ -1818,3 +1818,21 @@ img {
     opacity: 1;
     transition: opacity 0.5s ease;
 }
+
+/* PXL Playground Container - isolate LedMatrix styles */
+#pxl-playground {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+#pxl-playground .ledMatrix {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Prevent .led class from leaking outside playground */
+.phone-screen .led,
+.app-screenshots .led {
+    all: unset;
+}
