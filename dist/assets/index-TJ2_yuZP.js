@@ -11883,6 +11883,14 @@ Error generating stack: ` + p.message + `
     }
     const p0 = document.createElement("style");
     p0.textContent = `
+  /* Reset pxl-device-view's global .app-content that conflicts with shop layout */
+  .app-section .app-content {
+    flex: unset;
+    display: block;
+    overflow: visible;
+  }
+  
+  /* Playground-scoped styles */
   #pxl-playground .ledMatrix {
     display: grid;
     gap: 3px;

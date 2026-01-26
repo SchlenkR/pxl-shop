@@ -3,9 +3,17 @@ import { createRoot } from 'react-dom/client';
 import { LedMatrix, configs } from 'pxl-device-view';
 import * as Pxl from '@pxl/api';
 
-// Scoped styles (no global CSS import to avoid conflicts)
+// Scoped styles - neutralize pxl-device-view global CSS that conflicts with shop layout
 const style = document.createElement('style');
 style.textContent = `
+  /* Reset pxl-device-view's global .app-content that conflicts with shop layout */
+  .app-section .app-content {
+    flex: unset;
+    display: block;
+    overflow: visible;
+  }
+  
+  /* Playground-scoped styles */
   #pxl-playground .ledMatrix {
     display: grid;
     gap: 3px;
